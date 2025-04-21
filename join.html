@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fitness Website Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      color: gold;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #ccc;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: #333;
+      color: #fff;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: gold;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Join Our Fitness Centre</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required >
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="80" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="" disabled selected>Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="goals">Fitness Goals:</label>
+    <textarea id="goals" name="goals" rows="3" placeholder="e.g., weight loss, muscle gain, flexibility..."></textarea>
+
+    <label for="program">Preferred Program:</label>
+    <select id="program" name="program" required>
+      <option value="" disabled selected>Select</option>
+      <option value="calisthenics">Calisthenics</option>
+      <option value="weight_training">Weight Training</option>
+      <option value="yoga">Yoga</option>
+      <option value="cardio">Cardio</option>
+      <option value="parkour">Parkour</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
